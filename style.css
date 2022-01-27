@@ -1,0 +1,47 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+}
+
+.container-encryptor{
+   margin: auto;
+   height: 100vh;
+   border:1px solid;
+   display:flex;
+   justify-content: center;
+}
+
+.btn{
+    background: #0A3871;
+    border-radius: 10px;
+    width: 20em;
+    color:white;
+    padding:12px;
+    border:none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #0f56ad ;
+}
+
+.desincriptar{
+    background: #D8DFE8;
+    color:black;
+}
+
+.enter-text{
+    width: 70vw;
+    display: flex;
+    border:1px solid;
+    padding-left: 10em;
+}
+
+.right{
+    margin: 20px 20px;
+    padding: 8px;
+    border-radius: 20px;
+    width:25vw;
+    background: #FFFFFF;
+}
