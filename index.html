@@ -8,27 +8,36 @@
     <link rel="StyleSheet" href="style.css" type="text/css"></link>
 </head>
 <body>
-    <h1>a</h1> 
-    <div class="container-encryptor">
+    <h1 class="alura__logo">a</h1> 
+    <div class="container__encryptor">
         
-        <div class="enter-text"> 
-           <div>
-            <input type="text" placeholder="Ingrese el texto aquí">
+        <div class="container__text"> 
+           <div class="container__text__input">
+               <textarea rows="20" class="input__text" placeholder="Ingrese el texto aquí" > </textarea>
            </div>
-           <div>
-               <p>Solo letras minuscula sy sin acentos</p>
-             <button class="btn ecriptar">Encriptar</button>
-             <button class="btn desincriptar">Desincriptar</button> 
+           <p class="alert__text">Apenas letras minusculas y sin acentos</p>
+           <div class="container__text__button">
+             <button  class="btn encriptar" id="encriptar">Encriptar</button>
+             <button class="btn desincriptar" id="desincriptar">Desincriptar</button> 
            </div>
         </div>
     
-        <div class="right">
-            <input placeholder="Ningun Mensjae fue enviado">
-            <p>Ingres el texto que desees encriptar o desecriptar</p>
+        <div class="container__result">
+             <!-- <img src="img.png"> -->
+            <div class="container__result__paragraph">
+                <textarea class="container__result__text" id="result">Aquí va el resultado</textarea>
+            </div>
+            <div class="container__btnCopy">
+                <button class="btn copy" id="copy">Copiar</button>
+            </div>
         </div>
         
     </div>
- 
-    <p>Creado Por Eduardo Ormeño para Aura Latam :)</p>
+    
+    <footer class="footer">
+        <p>Creado Por Eduardo Ormeño para Aura Latam 💖</p>
+    </footer>
+    <script src="js/index.js"></script>
+
 </body>
 </html>

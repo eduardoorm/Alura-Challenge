@@ -1,47 +1,137 @@
 *{
-    margin:0px;
-    padding: 0px;
     box-sizing: border-box;
     background-color: #F3F5FC;
+    margin:0px;
+    padding: 0px;
 }
 
-.container-encryptor{
-   margin: auto;
-   height: 100vh;
-   border:1px solid;
+.container__encryptor{
    display:flex;
-   justify-content: center;
+   flex-wrap: wrap;
+   margin: auto;
+   justify-content: space-around;
+   padding: 2em;
 }
 
 .btn{
-    background: #0A3871;
+    display: block;
     border-radius: 10px;
     width: 20em;
     color:white;
     padding:12px;
     border:none;
     cursor: pointer;
+    margin-top: 1em;
 }
 .btn:hover{
     background-color: #0f56ad ;
+}
+.encriptar{
+    background-color: #0f56ad ;
+    color:white;
+    margin-right: 1em;
 }
 
 .desincriptar{
     background: #D8DFE8;
     color:black;
 }
-
-.enter-text{
-    width: 70vw;
-    display: flex;
-    border:1px solid;
-    padding-left: 10em;
+.container__btnCopy{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+}
+.copy{
+    background: #D8DFE8;
+    color:black;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin:0;
 }
 
-.right{
-    margin: 20px 20px;
-    padding: 8px;
-    border-radius: 20px;
-    width:25vw;
+
+
+.container__result{
+    align-items: center;
     background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    width:30%;
+}
+
+.container__result__text{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border:none;
+    margin-bottom: 90px;
+}
+.container__result__paragraph{
+    width: 100%;
+    height: 80%;
+}
+
+
+.container__text{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 3em;
+    width: 55%;
+    height: 100%;
+}
+
+.container__text__input{
+    width: 100%;
+
+}
+.input__text{
+    width: 100%;
+    font-size: 1.3em;
+    color: #0A3871;
+    border: none;
+}
+.container__text__button{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.alura__logo{
+    color:#0A3871;
+    font-size: 4em;
+    margin-left: 1em;
+}
+
+.footer{
+    margin: 4em;
+    text-align: center;
+}
+
+.alert__text{
+    font-size: 14px;
+    margin-left: 10px;
+}
+@media only screen and (max-width:700px){
+
+    .container__result{
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .container__text{
+        width: 70%;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
 }
